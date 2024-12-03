@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@100;300;700;900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;700;900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: "Volkhov", serif;
+    background-color: #ffffff;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+ :root {
+    --main-color: #E21B70; 
+} 
+
+/** header part**/
+.navBar {
+    height: 65px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    box-shadow: 2px 2px 10px gainsboro;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 38px;
+    gap: 6px;
+}
+
+.header-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.header-logo p {
+    font-size: 1.40rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-links .logIn {
+    width: 72px;
+    height: 32px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 0.90rem;
+    font-weight: 500;
+}
+
+.header-links .signUp {
+    width: 80px;
+    height: 32px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    font-size: 0.90rem;
+    font-weight: 500;
+}
+
+.gloobSelect
+.fa-angle-down {
+    color: var(--main-color);
+}
+
+/** hero header **/
+.heroHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heroHeader-rightSide {
+    width: 600px;
+    height:500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroHeader-rightSide 
+.panda-image img {
+    width: 600px;
+    position: absolute;
+    bottom: 0px; 
+}
+
+.heading {
+    width: 650px;
+    height: 100px;
+    padding: 0px 64px;
+    margin-top: 50px;
+} 
+
+.heading h1 {
+    font-size: 2.2rem;
+}
+
+.search-panel {
+    width: 655px; 
+    height: 80px;
+    background-color: #ECEFF1;
+    margin-left: 64px;
+    margin-top: 30px; 
+    border-radius: 10px;
+    position: relative;
+}
+
+input {
+    width: 79%;
+    padding: 16px;
+    margin: 15px 15px; 
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.locate {
+    position: absolute;
+    top: 30px;
+    right: 135px;
+}
+
+.locate i {
+    color: var(--main-color);
+}
+
+.search-panel button {
+    width: 90px;
+    height: 45px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+} 
+
+/** kitchen part **/
+.kitchenHeader {
+    margin-top: 50px;
+}
+
+.kitchenHeader h2 {
+    margin: 0px 0px 32px;
+    padding: 0px 64px;
+    font-size: 1.70rem;
+}
+
+.home-vendor {
+    height: 540px;
+    position: relative;
+} 
+
+.home-vendor img {
+    width: 100%;
+}
+
+.content {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.content .pera-first {
+    font-size: 24px;
+} 
+
+.content .pera-sec {
+    font-size: 14px;
+    padding: 24px 0;
+}
+
+.content button {
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+}
+
+
+.location-wraper {
+    margin-top: 100px;
+}
+
+/** place details **/
+ .placeDetails {
+    width: 100%;
+    margin-top: 100px;
+} 
+
+.placeDetails h2 {
+    padding-left: 64px;
+    font-size: 1.70rem;
+}
+
+.image-wraper {
+    display: flex;
+    padding: 0px 64px;
+    margin-top: 20px;
+}
+
+.place-image {
+    position: relative;
+    width: 250px;
+    height: 240px;
+    border-radius: 20px;
+    margin: 8px;
+    overflow: hidden;
+}
+
+.pic:hover img {
+    transform: scale(1.1);
+}
+
+.pic img {
+    height: 260px;
+    width: 250px;
+    transition: 0.5s;
+}
+
+.location {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+/** banner part **/
+.bannerBox {
+    margin-top: 50px;
+    padding: 0 64px;
+}
+
+.bannerBox h2 {
+    font-size: 1.70rem;
+}
+
+.banner-wraper {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color); 
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.left-wraper {
+    margin-top: 20px;
+    padding: 40px 0px 40px 30px;
+}
+
+.left-wraper .firstP {
+    margin: 0px 0px 32px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.qucode-p {
+    display: flex;
+    align-items: center;
+}
+
+.qucode-p p {
+    color: #ffffff;
+    margin-left: 20px;
+    line-height: 1.5rem;
+}
+
+.qrcodeImg {
+    width: 75px;
+    height: 73px;
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+.qrcodeImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.downloadStore  {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 15px;
+}
+
+.playstore {
+    padding: 20px;
+    background-color: thistle;
+}
+
+.playstore i {
+    font-size: 2.5rem;
+}
+
+.right-wraper {
+    width: 500px;
+    height: 360px;
+    position: relative;
+}
+
+.imageDiv {
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+.imageDiv img {
+    width: 100%;
+    height: 100%;
+} 
+
+
+/** corporate bd **/
+.corporateBd {
+    margin-top: 90px;
+}
+
+.corporateBd h2 {
+    margin: 32px 64px;
+    font-size: 1.70rem;
+}
+
+.lastDivs {
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+
+.lastDivs img {
+    width: 100%;
+    height: 100%;
+}
+
+.foodBusiness {
+    width: 520px;
+    margin: 0px 64px;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -35%;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.foodBusiness 
+.businessTalk {
+    font-size: 1.50rem;
+}
+
+.foodBusiness 
+.paragraph {
+    font-size: 0.90rem;
+}
+
+.foodBusiness button {
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+
+
+/** order food paragraph **/
+.orderAndFoodDeatails {
+    margin-top: 250px;
+    padding: 0px 80px;
+}
+
+.numberOnePera {
+    font-size: 1.30rem;
+}
+
+
+.numberTwoPera {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.692);
+    font-size: 0.95rem;
+}
+
+/** footer international part **/
+.interNational {
+    margin: 150px 64px 0px 64px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    padding: 40px 0px;
+    gap: 10px;
+}
+
+.linkOne {
+    padding-right: 10px;
+    border-right: 1.5px solid gray;
+}
+
+.last {
+    border-right: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(19, 18, 18, 0.842);
+    font-size: 0.95rem;
+}
+
+.spanN{
+    border-bottom: 1.5px solid black;
+}
+
+/** footer sec **/
+.footerSec {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 64px;
+}
+
+.leftWraper {
+    display: flex;
+    gap: 5px;
+}
+
+.leftWraper div i {
+    font-size: 0.80rem;
+}
+
+.pandaFood p {
+    color: gray;
+}
+
+td {
+    padding: 0px 40px 10px 0px;
+}
+
+tr td span {
+    border-bottom: 1px solid black;
+}
+
+
+/** footer social **/
+.footerLast {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    margin: 0px 64px;
+}
+
+.leftFooterWraper {
+    display: flex;
+    align-items: center;
+}
+   
+.delevery {
+    display: flex;
+    align-items: center; 
+    gap: 5px;  
+}
+
+.delevery div i {
+    color: #A12727;
+}
+
+.delevery p {
+    font-size: 1.40rem;
+    color: #A12727;
+}
+
+.extraA {
+    height: 40px;
+    width: 1px;
+    background-color: black;
+    margin: 0px 40px;
+}
+
+.rightFooterWraper {
+    display: flex;
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+.rightFooterWraper i {
+    font-size: 30px;
+}
