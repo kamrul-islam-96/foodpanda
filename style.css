@@ -11,6 +11,8 @@
 body {
     font-family: "Volkhov", serif;
     background-color: #ffffff;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 p {
@@ -206,27 +208,28 @@ input {
 
 /** place details **/
  .placeDetails {
-    width: 100%;
-    margin-top: 100px;
+    width: 1380px;
+    margin: 100px 0 0;
+    padding: 0px 64px;
 } 
 
 .placeDetails h2 {
-    padding-left: 64px;
+    padding: 0 10px 20px;
     font-size: 1.70rem;
 }
 
 .image-wraper {
+    width: 100%;
+    height: auto;
     display: flex;
-    padding: 0px 64px;
-    margin-top: 20px;
 }
 
 .place-image {
+    width: 340px;
+    height: 250px;
     position: relative;
-    width: 250px;
-    height: 240px;
     border-radius: 20px;
-    margin: 8px;
+    margin: 10px ;
     overflow: hidden;
 }
 
@@ -235,8 +238,8 @@ input {
 }
 
 .pic img {
+    width: 350px;
     height: 260px;
-    width: 250px;
     transition: 0.5s;
 }
 
